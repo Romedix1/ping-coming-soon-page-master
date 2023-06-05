@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;800;900&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  --Blue: hsl(223, 86%, 63%);
+  --PaleBlue: hsl(223, 100%, 88%);
+  --LightRed: hsl(354, 100%, 66%);
+  --Gray: hsl(0, 0%, 59%);
+  --VeryDarkBlue: hsl(209, 33%, 12%);
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 6vw;
+}
+
+.nav
+{
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.nav-logo
+{
+  width: 3rem;
+}
+
+.main-section
+{
+  margin: auto;
+  width: 90vw;
+  margin-top: 2rem;
+}
+
+.header-section
+{
+  text-align: center;
+}
+
+.header-section h1
+{
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--Gray);
+}
+
+.header-section .h1-element
+{
+  font-weight: 800;
+  color: black;
+  font-size: 1.1rem;
+}
+
+.header-section p
+{
+  margin-top: 0.8rem;
+  font-size: 0.65rem;
+}
+
+form
+{
+  margin-top: 1.5rem;
+}
+
+input[type='email']
+{
+  padding: 0.4rem 0.2rem 0.4rem 1.5rem;
+  font-size: 0.8rem;
+  width: 80%;
+  margin-left: 0.8rem;
+  border-radius: 2rem;
+  outline: none;
+  border: 0.5vw solid var(--PaleBlue);
+}
+
+input[type='email']::placeholder
+{
+  opacity: .6;
+}
+
+input[type='submit']
+{
+  background-color: var(--Blue);
+  font-size: 0.7rem;
+  margin-left: 0.8rem;
+  color: #ffffff;
+  border-radius: 2rem;
+  padding: 0.5rem 5.3rem;
+  margin-top: 1rem;
+  box-shadow: 0px 26px 36px -23px var(--Blue);
+  border: none;
+  cursor: pointer;
+}
+
+.main-img
+{
+  width: 15rem;
+  margin-top: 3rem;
+}
+
+.icon-section
+{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 45vw;
+  height: 15vw;
+  margin-top: 3rem;
+
+}
+
+.footer-icon
+{
+  padding: 0.4rem;
+  border-radius: 50%;
+  transform: scale(0.6);
+  border: 0.3vw solid var(--Blue);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.footer-icon:hover
+{
+  fill: #ffffff;
+  background-color: var(--Blue);
+}
+
+.copyright
+{
+  font-size: 0.7rem;
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--Gray);
+  margin-bottom: 2rem;
+}
+
+.error
+{
+  font-size: 0.6rem;
+  margin-top: 0.3rem;
+  text-align: center;
+  color: var(--LightRed);
+}
+
+@media (min-width: 450px) {
+  *
+  {
+    font-size: 4vw;
+  }
+  input[type='email']
+  {
+    margin-left: 3.3rem;
+    width: 65%;
+  }
+  input[type='submit']
+  {
+    padding: 0.5rem 6.7rem;
+    margin-left: 3.3rem;
+  }
+  .main-img
+  {
+    width: 100%;
+  }
+  .footer-icon
+  {
+    transform: scale(0.5);
+  }
+}
+
+@media (min-width: 800px) {
+  *
+  {
+    font-size: 2.5vw;
+  }
+  input[type='email']
+  {
+    margin-left: 5.3rem;
+    border: 0.1rem solid var(--PaleBlue);
+  }
+  input[type='submit']
+  {
+    padding: 0.5rem 11.1rem;
+    margin-left: 5.3rem;
+  }
+  .main-img
+  {
+    margin-left: 3.5rem;
+    width: 80%;
+  }
+  .footer-icon
+  {
+    padding: 1rem;
+    transform: scale(0.4);
+  }
+}
+
+@media (min-width: 1024px) {
+  *
+  {
+    font-size: 2vw;
+  }
+  form
+  {
+    display: flex;
+    align-items: center;
+  }
+  input[type='email']
+  {
+    width: 40%;
+    margin-left: 5.3rem;
+    border: 0.1rem solid var(--PaleBlue);
+  }
+  input[type='submit']
+  {
+    margin-top: 0;
+    padding: 0.5rem 4.1rem;
+    margin-left: 1.3rem;
+  }
+  .error  
+  {
+    top: 13rem;
+    left: 9rem;
+    position: absolute;
+  }
+  .footer-icon
+  {
+    padding: 0.3rem;
+    transform: scale(0.7);
+  }
+  .icon-section
+  {
+    width: 25vw;
+    height: 5vw;
+  }
+}
+
+@media (min-width: 1400px) {
+  *
+  {
+    font-size: 1.3vw;
+  }
+  input[type='email']
+  {
+    width: 40%;
+    margin-left: 13.3rem;
+    border: 0.1rem solid var(--PaleBlue);
+  }
+  .error  
+  {
+    top: 13rem;
+    left: 19rem;
+    position: absolute;
+  }
+  .main-img
+  {
+    width: 50%;
+    margin-top: 5rem;
+    margin-left: 15rem;
+  }
+  .footer-icon
+  {
+    padding: 0.8rem;
+    transform: scale(0.6);
+  }
+}
